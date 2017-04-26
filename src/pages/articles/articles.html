@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Articles</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list *ngFor="let article of articles">
+	  <ion-item>
+	    <ion-avatar item-left>
+	      <img src="{{article.img_path}}">
+	    </ion-avatar>
+	    <h2>{{article.title}}</h2>
+	    <p>{{article.short_story}}</p>
+	  </ion-item>
+	</ion-list>
+</ion-content>
